@@ -1,3 +1,3 @@
 # Advanced-Job-Scrapper
 Uses Flask to scrap specific jobs from StackOverFlow  
-Automatically creates csv file for colleted Jobs
+Automatically creates csv file to store colleted Jobs
