@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect,send_file
 from scrapper import get_SO_jobs
 from exporter import save_to_file
 
-
+ 
 app = Flask("JobScrapper")
 
 db = {} 
