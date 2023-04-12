@@ -3,10 +3,9 @@
   <head>
     <title>Job Search</title>
     <style>
-      section{  /*table처럼 보이게 하기 위해서*/
+      section{ 
         display : grid;
         grid-template-columns : repeat(4,1fr);  
-        /*repeat하는데 4 columns하고 1fr width를 준 것!*/
         gap : 20px; 
       }
     </style>
@@ -15,7 +14,6 @@
     <h1>Search Results</h1>
     <h3>Found {{resultNum}} results for {{search}}</h3>
     <a href="/export?word={{search}}">Export to CSV</a>
-    <!--export링크를 보여줌! /export로 데려가서-->
 
     <section>
       <h4>Title</h4>
@@ -30,9 +28,7 @@
         <span>{{each_job.location}}</span>
         <a href= "{{job.applied_link}}" target="_blank">Apply</a>
       {%endfor%}
-        <!--target에 링크를 일부로 안넣음. 너무 느려질까봐-->
-
-      <!--이것들은 다 scrapper find_jobs()에서 온것들!!-->
+       
     <section>  
   </body>
 </html>
